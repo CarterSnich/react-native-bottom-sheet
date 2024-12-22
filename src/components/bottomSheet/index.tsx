@@ -502,7 +502,7 @@ const BottomSheet = forwardRef<BottomSheetMethods, BottomSheetProps>(
 
             <View
               // we apply padding styles here to not affect drag handle above
-              style={sepStyles?.paddingStyles}
+              style={[sepStyles?.paddingStyles, { flex: 1 }]}
             >
               {ChildNodes}
             </View>
